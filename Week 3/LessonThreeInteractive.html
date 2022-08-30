@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" lang="en">
+        <title>Lesson Three Hands On</title>
+    </head>
+    <body>
+        <h1>Making It Interactive with JavaScript</h1>
+        <!-- Everything inside of this tag is JavaScript, not HTML. -->
+        <script>
+            // This is a single line comment in JavaScript.
+            
+            // Both of these variables are considered numbers in JavaScript, but most programming languages consider whole numbers as "integers" and numbers with decimal places as "floats"
+            var integer = 1;
+            var float = 3.14;
+
+            // This is a boolean value, meaning it is either true or false
+            var boolean = true;
+
+            // This is a string value, meaning it can be any text
+            var string = "This is a fun string.";
+            
+            // You do not need to use the var keyword after you create a variable.
+            integer = 2;
+
+            // You can also use the let keyword to make a variable. This makes a variable that is scope limited. (You do not need to know what this means as it will be explained later.)
+            let anotherVariable = 1;
+
+            // You can use the const keyword to make a constant variable. You cannot change the value of a constant variable after it is set.
+            const firstName = "Atticus";
+
+            // Variable names are case-sensitive.
+            const variablename = "lowercase";
+            const variableName = "camelCase";
+
+            // The alert function displays a message to the website user.
+
+            // Here I created a string to display to the user.
+            alert("Hello, world!");
+
+            // Here I used a variable that I created earlier.
+            alert(string);
+
+            // console.log outputs to the developer console. This allows you to see the messages with the developer tools in you browser (right-click and inspect, or Ctrl+Shift+I) without showing the message to users.
+            console.log("This is only shown in the console!");
+
+            console.log(string);
+        </script>
+        <!-- Everything is back to HTML here. -->
+    </body>
+</html>
