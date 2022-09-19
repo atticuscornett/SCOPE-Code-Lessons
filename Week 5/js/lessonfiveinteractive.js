@@ -146,7 +146,7 @@ else{
             alert("You are cool. Welcome to the website.")
         }
         else{
-            console("You are old enough, but you are not cool enough.");
+            alert("You are old enough, but you are not cool enough.");
         }
     }
     else{
@@ -157,7 +157,7 @@ else{
             alert("You are cool, but too young. Come back later.")
         }
         else{
-            console("You have been denied.");
+            alert("You have been denied.");
         }
     }
 }
