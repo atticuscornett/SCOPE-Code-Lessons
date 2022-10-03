@@ -36,6 +36,7 @@ while (namePrompt != "" && namePrompt != null){
 
 console.log(nameArray);
 
+ageArray = [13,9,8,62,5];
 console.log("Removing Items");
 console.log(ageArray);
 
