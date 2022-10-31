@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/x-icon" href="img/favicon.jpg">
+        <meta charset="utf-8" lang="en">
+        <title>Lesson Ten Hands On</title>
+    </head>
+    <body>
+        <h1>JavaScript DOM Part 2</h1>
+
+        <hr>
+        <h1>Sign Up</h1>
+        <!-- Forms can check if the inputs are valid. -->
+        <form id="myForm">
+            <!-- The required attribute forces the user to fill the input -->
+            <label for="fullName">Full Name: </label>
+            <input type="text" id="fullName">
+            <br>
+            <label for="userEmail">Email: </label>
+            <input type="email" id="userEmail">
+            <br>
+            <label for="birthday">Birthday: </label>
+            <input type="date" id="birthday">
+            <br>
+            <label for="website">Website: </label>
+            <input type="url" id="website">
+            <br>
+            <label for="wantEmail">Do you want emails? </label>
+            <input type="checkbox" id="wantEmail">
+            <br>
+        </form>
+        <!-- We must specify the type as button because we are in a form. -->
+        <button id="submitButton" onclick="submitForm();">Sign Up</button>
+
+        <br><br>
+        <hr>
+        <h1>HTML Lists</h1>
+
+        <!-- Unordered List -->
+        <ul>
+            <li>Unordered list one</li>
+            <li>Unordered list two</li>
+            <li>Unordered list three</li>
+        </ul>
+
+        <!-- Ordered List -->
+        <ol>
+            <li>Ordered list one</li>
+            <li>Ordered list two</li>
+            <li>Ordered list three</li>
+        </ol>
+        <!-- The JavaScript code is located in a separate file. -->
+        <script src="js/lessonteninteractive.js"></script>
+    </body>
+</html>
