@@ -11,6 +11,8 @@ html{
 h1, h2{
     /* EM sets the font size relative to the default size of the font */
     font-size: 2.5em;
+    /* If we set the offset to 0px, it looks like a glow. */
+    text-shadow: 0px 0px 5px grey;
     /* Font-weight changes the boldness/thickness of the font */
     font-weight: 700;
     color: dodgerblue;
@@ -22,6 +24,7 @@ h1, h2{
 
 /* This rule is later and more specific, so it overrules previous rules */
 h2 {
+    text-shadow: none;
     font-size: 2em;
     font-weight: 400;
 }
