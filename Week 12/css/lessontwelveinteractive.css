@@ -1,0 +1,105 @@
+#top-bar{
+    /* Makes the top bar stay in the same position when scrolling */
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    /* We can also set the width and height of the div */
+    width: 100%;
+    background-color: #222222;
+    z-index: 9999;
+}
+
+#title-top{
+    margin: 0px;
+    padding: 10px;
+    /* This moves the element relative to where it normally would be */
+    position: relative;
+    right: 1000px;
+    opacity: 0px;
+    /* Animation settings */
+    animation-name: titleAnimation;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    /* Stay on final animation frame when animation ends */
+    animation-fill-mode: both;
+}
+
+@keyframes titleAnimation {
+    from {
+        opacity: 0.0;
+        right: 1000px;
+    }
+    to {
+        opacity: 1.0;
+        right: 0px;
+    }
+}
+
+#sign-up{
+    /* This moves the text from under the top bar. */
+    padding-top: 80px;
+}
+
+/* Change the background color of the HTML element and the color of the text children. */
+
+html{
+    /* Instead of using a background color, we use background and linear-gradient colors. */
+    /* We can also add more that one color to the gradient */
+    background: linear-gradient(-45deg, #000000, #222222, #222222);
+    color: white;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+}
+
+/* This rule applies to both the h1 and h2 elements. */
+h1, h2{
+    /* EM sets the font size relative to the default size of the font */
+    font-size: 2.5em;
+    /* If we set the offset to 0px, it looks like a glow. */
+    text-shadow: 0px 0px 5px grey;
+    /* Font-weight changes the boldness/thickness of the font */
+    font-weight: 700;
+    color: dodgerblue;
+    /* We can specify the border on specific sides */
+    border-bottom: dodgerblue 5px solid;
+    /* Padding adds to the inside of the border, adding more space between the element and the border */
+    padding-bottom: 15px;
+}
+
+/* This rule is later and more specific, so it overrules previous rules */
+h2 {
+    text-shadow: none;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+label, input{
+    font-size: 20px;
+}
+
+/* This rule applies to elements with the response class. Because it is more specific, it overrules earlier rules. */
+.response{
+    /* Setting a property to none removes the styling */
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* These rules apply to elements with certain ids. */
+
+#ordered {
+    margin-bottom: 30px;
+}
+
+/* One great application of CSS is to change the look of buttons */
+#submitButton {
+    border: none;
+    /* You can set the border radius to round the button corners even though the border is set to none. */
+    border-radius: 7px;
+    margin-top: 20px;
+    padding: 3px;
+    font-size: 20px;
+    background-color: dodgerblue;
+    color: white;
+    font-family: "Roboto Slab";
+}

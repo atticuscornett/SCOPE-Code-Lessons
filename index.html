@@ -8,8 +8,14 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
         <style>
-            body{
+            html{
                 font-family: 'Roboto', sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                margin: 0;
+                padding: 0;
             }
             h1{
                 font-weight: 700;
@@ -20,12 +26,25 @@
     			color: transparent;
     			-webkit-background-clip: text;
     			background-clip: text;
+                margin-left: 10px;
 			}
+            #going-further{
+                color: white;
+                margin: 15px 15px 15px 15px;
+                border-radius: 15px;
+                padding: 10px;
+                width: calc(100%-60px);
+                background: linear-gradient(-45deg, rgb(45, 82, 191), rgb(18, 19, 67));
+            }
+            a{
+                color: dodgerblue;
+            }
         </style>
     </head>
     <body>
         <h1 class="gradient-title">SCOPE Code Lesson Hub</h1>
-        <div style="display: grid;grid-template-columns: auto auto auto;">
+        <h2 style="margin-left: 10px;">Thank you for an awesome Fall 2022 Semester! You can find additional resources at the bottom of the page.</h2>
+        <div style="display: grid;grid-template-columns: auto auto auto; margin-left: 10px;">
             <div>
                 <h2>Lesson One</h2>
                 <h3><a href="https://github.com/atticuscornett/SCOPE-Code-Lessons/blob/main/Week%201/CodingLessonOne.pptx?raw=true" target="_blank">Lesson One PowerPoint</a></h3>
@@ -108,6 +127,27 @@
                 <h3><a href="https://github.com/atticuscornett/SCOPE-Code-Lessons/blob/main/Week%2011/css/lessoneleveninteractive.css" target="_blank">Lesson Eleven CSS Code</a></h3>
                 <h3><a href="/SCOPE-Code-Lessons/Week%2011/CodeExamples.html" target="_blank">Lesson Eleven Website Preview</a></h3>
             </div>
+            <div>
+                <h2>Lesson Twelve</h2>
+                <h3><a href="https://github.com/atticuscornett/SCOPE-Code-Lessons/blob/main/Week%2012/CodingLessonTwelve.pptx?raw=true" target="_blank">Lesson Twelve PowerPoint</a></h3>
+                <h3><a href="https://github.com/atticuscornett/SCOPE-Code-Lessons/blob/main/Week%2012/CodeExamples.html" target="_blank">Lesson Twelve HTML Code</a></h3>
+                <h3><a href="https://github.com/atticuscornett/SCOPE-Code-Lessons/blob/main/Week%2012/css/lessontwelveinteractive.css" target="_blank">Lesson Twelve CSS Code</a></h3>
+                <h3><a href="/SCOPE-Code-Lessons/Week%2012/CodeExamples.html" target="_blank">Lesson Twelve Website Preview</a></h3>
+            </div>
+        </div>
+        <div id="going-further">
+            <h1>Want to take it further?</h1>
+            <h2>Here are some great resources for learning even more about HTML, CSS, and JS:</h2>
+            <h3><a href="https://www.w3schools.com/" target="_blank">w3schools</a></h3>
+            <h3><a href="https://www.w3schools.com/cssref/pr_background-image.php" target="_blank">w3schools - Lesson About Background Images</a></h3>
+            <h3><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a></h3>
+            <h2>Here are some extra things you can do with HTML, JS, and CSS:</h2>
+            <h3><a href="https://www.electronjs.org/" target="_blank">ElectronJS - Turn your code into a desktop app</a></h3>
+            <h3><a href="https://cordova.apache.org/" target="_blank">Apache Cordova - Turn your code into a mobile app (older)</a></h3>
+            <h3><a href="https://capacitorjs.com/" target="_blank">CapacitorJS - Turn your code into a mobile app (newer)</a></h3>
+            <h3><a href="https://github.com/" target="_blank">GitHub (Pages Feature) - Host your code as a website for free</a></h3>
+            <h2>Need any help?</h2>
+            <h3>Reach out to me using the <a href="https://github.com/atticuscornett/SCOPE-Code-Lessons/discussions/1" target="_blank">GitHub discussions page.</a></h3>
         </div>
     </body>
 </html>
